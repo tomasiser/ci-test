@@ -11,3 +11,11 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+      - run:
+          name: Build
+          command: |
+            g++ -c main.cpp
+            g++ -o main main.o
+      - run:
+          name: Run
+          command: ./main
