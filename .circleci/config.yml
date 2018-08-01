@@ -12,6 +12,14 @@ jobs:
           name: Print the Current Time
           command: date
       - run:
+          name: mkdir
+          command: |
+            mkdir lol
+            cd lol
+      - run:
+          name: pwd
+          command: pwd
+      - run:
           name: Build
           command: |
             g++ -c main.cpp
